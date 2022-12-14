@@ -19,8 +19,8 @@
 							"",
 							"pm.test(\"Matching body\", function () {",
 							"    const jsonData = pm.response.json();",
-							"    pm.expect(jsonData[0]).to.have.all.keys('id', 'type', 'price', 'version')",
-							"    pm.expect(jsonData).to.be.an(\"array\").and.to.deep.include({ \"id\": \"09\", \"type\": \"CREDIT_CARD\", \"version\": \"v1\", \"price\": 99.99 })",
+							"    pm.expect(jsonData[0]).to.have.all.keys('id', 'type', 'name', 'price', 'version')",
+							"    pm.expect(jsonData).to.be.an(\"array\").and.to.deep.include({ \"id\": \"09\", \"type\": \"CREDIT_CARD\", \"name\": \"Gem Visa\", \"version\": \"v1\", \"price\": 99.99 })",
 							"});",
 							"",
 							""
@@ -93,7 +93,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": \"09\",\n        \"type\": \"CREDIT_CARD\",\n        \"price\": 99.99,\n        \"version\": \"v1\"\n    },\n    {\n        \"id\": \"10\",\n        \"type\": \"CREDIT_CARD\",\n        \"price\": 49.49,\n        \"version\": \"v1\"\n    },\n    {\n        \"id\": \"11\",\n        \"type\": \"PERSONAL_LOAN\",\n        \"price\": 16.5,\n        \"version\": \"v2\"\n    }\n]"
+					"body": "[\n    {\n        \"id\": \"09\",\n        \"name\": \"Gem Visa\",\n        \"type\": \"CREDIT_CARD\",\n        \"price\": 99.99,\n        \"version\": \"v1\"\n    },\n    {\n        \"id\": \"10\",\n        \"name\": \"28 Degrees\",\n        \"type\": \"CREDIT_CARD\",\n        \"price\": 49.49,\n        \"version\": \"v1\"\n    },\n    {\n        \"id\": \"11\",\n        \"name\": \"MyFlexiPay\",\n        \"type\": \"PERSONAL_LOAN\",\n        \"price\": 16.5,\n        \"version\": \"v2\"\n    }\n]"
 				}
 			]
 		},
@@ -111,8 +111,8 @@
 							"",
 							"pm.test(\"Matching body\", function () {",
 							"    const jsonData = pm.response.json();",
-							"    pm.expect(jsonData).to.have.all.keys('id', 'type', 'price', 'version')",
-							"    pm.expect(jsonData).to.deep.include({ \"id\": \"09\", \"type\": \"CREDIT_CARD\", \"version\": \"v1\", \"price\": 99.99 })",
+							"    pm.expect(jsonData).to.have.all.keys('id', 'type', 'name', 'price', 'version')",
+							"    pm.expect(jsonData).to.deep.include({ \"id\": \"09\", \"type\": \"CREDIT_CARD\", \"name\": \"Gem Visa\", \"version\": \"v1\", \"price\": 99.99 })",
 							"});",
 							"",
 							""
@@ -249,7 +249,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": \"09\",\n    \"type\": \"CREDIT_CARD\",\n    \"version\": \"v1\",\n    \"price\": 99.99\n}"
+					"body": "{\n    \"id\": \"09\",\n    \"type\": \"CREDIT_CARD\",\n    \"name\": \"Gem Visa\",\n    \"version\": \"v1\",\n    \"price\": 99.99\n}"
 				}
 			]
 		},

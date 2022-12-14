@@ -2,6 +2,7 @@ name: Test & Upload to Pactflow
 
 on:
   push:
+  workflow_dispatch:
 
 env:
   PACT_BROKER_BASE_URL: https://cyberark.pactflow.io
